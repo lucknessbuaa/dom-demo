@@ -1,2 +1,2 @@
 # dom-demo
-<img src="./images/event-flow.svg" />
+<img src="https://github.com/lucknessbuaa/dom-demo/blob/master/images/event-flow.svg" />
