@@ -34,3 +34,11 @@ if (event.cancelBubble) event.cancelBubble = true; // IE
 * stopPropagation会阻止该对象之后的其他对象触发事件处理程序，但是该对象上注册的所有事件处理程序都会执行；
 * stopImmediatelyPropagation也会阻止在相同对象上注册的任何其他事件处理程序的调用；
 * stopImmediatelyPropagation还未得到广泛的支持，可以使用jQuery的该方法；
+
+#### mouseover, mouseenter, mouseout, mouseleave
+* 不论鼠标指针穿过被选元素或其子元素，都会触发mouseover事件；
+* 只有在鼠标指针穿过被选元素时，才会触发mouseenter事件；
+* 不论鼠标指针离开被选元素还是任何子元素，都会触发mouseout事件；
+* 只有在鼠标指针离开被选元素时，才会触发mouseleave事件；
+* 父元素内部的元素间移动时触发的mouseover/mouseout事件可以传递给父元素，但mouseenter/mouseleave不可以传递给父元素；
+* 从父元素进入子元素时会先触发父元素的mouseout事件，但不会触发父元素的mouseleave事件；
